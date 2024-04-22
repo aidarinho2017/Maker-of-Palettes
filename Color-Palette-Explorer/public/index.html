@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Color Palette Explorer</title>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+
+<body>
+<div class="redact">
+<h1> Редактор Палитр </h1>
+</div>
+<div class="container">
+  <section class="create-palette">
+    <h2> Создавайте Новые Палитры! </h2>
+    <div class="color-picker-container"></div>
+    <div id="palette-name-input">
+      <input type="text" id="palette-name" class="palette-name" placeholder="Название палитры" />
+
+      <div class="hsl-controls">
+        <div class="hsl-row">
+          <div class="hsl-column">
+            <label for="hue">H</label>
+            <span id="hue-value">0</span>
+            <input type="range" id="hue" name="hue" min="0" max="360" value="0" />
+          </div>
+          <div class="hsl-column">
+            <label for="saturation">S</label>
+            <span id="saturation-value">0%</span>
+            <input type="range" id="saturation" name="saturation" min="0" max="100" value="0" />
+          </div>
+          <div class="hsl-column">
+            <label for="lightness">L</label>
+            <span id="lightness-value">0%</span>
+            <input type="range" id="lightness" name="lightness" min="0" max="100" value="0" />
+          </div>
+        </div>
+      </div>
+
+
+</div>
+
+      <section class="palette-display"></section>
+
+    <div class="buttons">
+      <button class="btn-add-color">Добавить цвет</button>
+      <button class="btn-save-palette">Сохранить палитру</button>
+      <button class="btn-reset">Сбросить все</button>
+      <button class="btn-remove-colors">Очистить палитру</button>
+      <button class="btn-share">Поделиться</button>
+    </div>
+
+  </section>
+</div>
+<script src="components/script.js">
+</script>
+</body>
